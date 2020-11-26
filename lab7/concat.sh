@@ -4,8 +4,8 @@ read first
 echo "Enter second filename"
 read second
 
-cat $first | head -n 5 > $third
-cat $second | head -n 15 | tail -n 8  >> $third
+cat first.txt | head -n 5 > third.txt
+cat second.txt | head -n 15 | tail -n 8  >> third.txt
 
 echo "After concatenation:"
-cat $third
+cat third.txt
